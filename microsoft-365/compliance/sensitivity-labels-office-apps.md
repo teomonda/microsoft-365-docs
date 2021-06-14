@@ -261,6 +261,8 @@ However, the automatic guest account is not created immediately in this scenario
 > [!TIP]
 > Because you can't be sure that external users will be using a supported Office client app, sharing links from SharePoint and OneDrive after creating guest accounts (for specific users) or when you use [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) (for any authenticated user) is a more reliable method to support secure collaboration with external users.
 
+Section to be verified as, from my tests and my customer's exteral users with Microsoft accounts cannot open documents in the browser and thus the SharePoint Sharing link is useless. Only attaching the document as a copy seems to work, and opening in desktop apps, even if the account is added to guests
+
 ### Conditional Access policies
 
 If your organization has implemented [Azure Active Directory Conditional Access policies](/azure/active-directory/conditional-access/overview), check the configuration of those policies. If the policies include **Microsoft Azure Information Protection** and the policy extends to external users, those external users must have a guest account in your tenant even if they have an Azure AD account in their own tenant.
